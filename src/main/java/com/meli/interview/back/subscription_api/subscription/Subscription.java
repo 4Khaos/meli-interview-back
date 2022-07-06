@@ -7,15 +7,11 @@ public class Subscription {
         float price = 0;
         if (partner.equals("disney")) {
             price = 100;
-        }
-
-        if (partner.equals("netflix")) {
+        }else if (partner.equals("netflix")) {
             price = 200;
-        }
-
-        if (partner.equals("spotify")) {
+        }else if (partner.equals("spotify")) {
             price = 50;
-        } else {
+        }else {
             price = 0;
         }
 

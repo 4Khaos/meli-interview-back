@@ -1,6 +1,7 @@
 package com.meli.interview.back.subscription_api.subscription;
 
 import com.meli.interview.back.subscription_api.exception.UserNotLoggedInException;
+import com.meli.interview.back.subscription_api.exception.UserNotInFriendsListException;
 import com.meli.interview.back.subscription_api.session.User;
 import com.meli.interview.back.subscription_api.session.UserSession;
 
@@ -14,6 +15,7 @@ public class SubscriptionService {
      * @param user
      * @return costo total de la suscripciones del user
      * @throws UserNotLoggedInException si no hay un usuario logueado
+     * @throws UserNotInFriendsListException si el usuario no está en la lista de amigos
      */
     public Float getUserSubscriptionsCost(User user) throws UserNotLoggedInException {
         ArrayList<Subscription> subscriptionList = new ArrayList<Subscription>();

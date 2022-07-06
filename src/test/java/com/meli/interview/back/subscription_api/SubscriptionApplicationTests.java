@@ -10,4 +10,15 @@ class SubscriptionApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void whenUserLogged_getSubscriptionsCost_returnCost(){
+	}
+
+	@Test
+	void whenUserLogged_userNotInFriendList_throwsException(){
+	}
+
+	@Test
+	void whenUserLogged_userNotLoggedIn_throwsException(){
+	}
 }
