@@ -30,6 +30,8 @@ public class SubscriptionService {
             }
             if (isFriend) {
                 subscriptionList = SubscriptionDAO.findSubscriptionByUser(user);
+            } else {
+                throw new UserNotInFriendListException();
             }
 
             float totalPrice = 0;
